@@ -35,5 +35,35 @@ switch(opcion)
         area=(base*alt)/2;
         printf("El area del triangulo es:%.2f",area);
     break;
+        case 3:
+        printf("Ingrese ano de nacimiento:");
+        scanf("%d",&ano);
+        printf("Ingrese mes de nacimiento:");
+        scanf("%d",&mes);
+        printf("Ingrese dia de nacimiento:");
+        scanf("%d",&dia);
+        printf("Ingrese ano actual:");
+        scanf("%d",&anoac);
+        printf("Ingrese mes actual:");
+        scanf("%d",&mesac);
+        printf("Ingrese dia actual:");
+        scanf("%d",&diaac);
+        edad=anoac-ano;
+        meses=mesac-mes;
+        dias=diaac-dia;
+        if(dias<0)
+        {
+            meses=meses-1;
+            dias=dias+30;
+    
+        }else {
+            if(meses<0)
+                edad=edad-1;
+                meses=meses+12;
+        printf("Usted tiene:%d",edad,meses,dias);
+        }
+    }
+}
+
     }
 }
